@@ -1,8 +1,5 @@
 --[[
-  UI lib made by bungie#0001
-  
-  - Please do not use this without permission, I am working really hard on this UI to make it perfect and do not have a big 
-    problem with other people using it, please just make sure you message me and ask me before using.
+  pep & bungie were here xd
 ]]
 
 -- / Locals
