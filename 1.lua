@@ -1607,7 +1607,7 @@ function library:Init(key)
             toggleCorner.Name = "toggleCorner"
             toggleCorner.Parent = toggle
 
-            toggleGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(34, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 28))}
+            toggleGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, _G.MeowHookUISettings.CurrentColor), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(_G.MeowHookUISettings.CurrentColor['R']-6,_G.MeowHookUISettings.CurrentColor['G']-6,_G.MeowHookUISettings.CurrentColor['B']-6))}
             toggleGradient.Rotation = 90
             toggleGradient.Name = "toggleGradient"
             toggleGradient.Parent = toggle
