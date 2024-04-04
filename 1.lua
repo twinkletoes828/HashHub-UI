@@ -7,6 +7,8 @@ local Workspace = game:GetService("Workspace")
 local Player = game:GetService("Players").LocalPlayer
 local Mouse = Player:GetMouse()
 
+if MeowHook then print'MeowHook found' end
+
 -- / Services
 local UserInputService = game:GetService("UserInputService")
 local TextService = game:GetService("TextService")
