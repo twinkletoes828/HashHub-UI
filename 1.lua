@@ -1,7 +1,3 @@
---[[
-  pep & bungie were here xd
-]]
-
 -- / Locals
 local Workspace = game:GetService("Workspace")
 local Player = game:GetService("Players").LocalPlayer
@@ -259,7 +255,7 @@ function library:Watermark(text)
 
     bar.Name = "bar"
     bar.Parent = barFolder
-    bar.BackgroundColor3 = _G.MeowHookUISettings.CurrentColor
+    bar.BackgroundColor3 = Color3.fromRGB(159, 115, 255)
     bar.BackgroundTransparency = 0
     bar.Size = UDim2.new(0, 0, 0, 1)
 
@@ -364,7 +360,7 @@ function library:Watermark(text)
     
         bar.Name = "bar"
         bar.Parent = barFolder
-        bar.BackgroundColor3 = _G.MeowHookUISettings.CurrentColor
+        bar.BackgroundColor3 = Color3.fromRGB(159, 115, 255)
         bar.BackgroundTransparency = 0
         bar.Size = UDim2.new(0, 0, 0, 1)
     
@@ -562,11 +558,11 @@ function library:InitNotifications(text, duration, callback)
     
         bar.Name = "bar"
         bar.Parent = barFolder
-        bar.BackgroundColor3 = _G.MeowHookUISettings.CurrentColor
+        bar.BackgroundColor3 = Color3.fromRGB(159, 115, 255)
         bar.BackgroundTransparency = 0.200
         bar.Size = UDim2.new(0, 0, 0, 1)
         if type == "notification" then
-            bar.BackgroundColor3 = _G.MeowHookUISettings.CurrentColor
+            bar.BackgroundColor3 = Color3.fromRGB(159, 115, 255)
         elseif type == "alert" then
             bar.BackgroundColor3 = Color3.fromRGB(255, 246, 112)
         elseif type == "error" then
@@ -734,7 +730,7 @@ function library:Introduction()
     
     bar.Name = "bar"
     bar.Parent = barFolder
-    bar.BackgroundColor3 = _G.MeowHookUISettings.CurrentColor
+    bar.BackgroundColor3 = Color3.fromRGB(159, 115, 255)
     bar.BackgroundTransparency = 0.200
     bar.Size = UDim2.new(0, 0, 0, 1)
     
@@ -756,7 +752,7 @@ function library:Introduction()
     xsxLogo.Size = UDim2.new(0, 448, 0, 150)
     xsxLogo.Visible = true
     xsxLogo.Image = "http://www.roblox.com/asset/?id=9365068051"
-    xsxLogo.ImageColor3 = _G.MeowHookUISettings.CurrentColor
+    xsxLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     xsxLogo.ImageTransparency = 1
     
     hashLogo.Name = "hashLogo"
@@ -768,7 +764,7 @@ function library:Introduction()
     hashLogo.Size = UDim2.new(0, 150, 0, 150)
     hashLogo.Visible = true
     hashLogo.Image = "http://www.roblox.com/asset/?id=9365069861"
-    hashLogo.ImageColor3 = _G.MeowHookUISettings.CurrentColor
+    hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
     
     xsx.Name = "xsx"
@@ -937,7 +933,7 @@ function library:Init(key)
 
     bar.Name = "bar"
     bar.Parent = barFolder
-    bar.BackgroundColor3 = _G.MeowHookUISettings.CurrentColor
+    bar.BackgroundColor3 = Color3.fromRGB(159, 115, 255)
     bar.BackgroundTransparency = 0.200
     bar.Size = UDim2.new(0, 592, 0, 1)
     bar.BorderSizePixel = 0
@@ -1056,7 +1052,7 @@ function library:Init(key)
         page.MidImage = "http://www.roblox.com/asset/?id=3062506202"
         page.ScrollBarThickness = 1
         page.TopImage = "http://www.roblox.com/asset/?id=3062506202"
-        page.ScrollBarImageColor3 = _G.MeowHookUISettings.CurrentColor
+        page.ScrollBarImageColor3 = Color3.fromRGB(159, 115, 255)
         page.Visible = false
         
         pageLayout.Name = "pageLayout"
@@ -1074,7 +1070,7 @@ function library:Init(key)
 
         if TabLibrary.IsFirst then
             page.Visible = true
-            tabButton.TextColor3 = _G.MeowHookUISettings.CurrentColor
+            tabButton.TextColor3 = Color3.fromRGB(159, 115, 255)
             TabLibrary.CurrentTab = title
         end
         
@@ -1092,7 +1088,7 @@ function library:Init(key)
                     TweenService:Create(v, TweenTable["tab_text_colour"], {TextColor3 = Color3.fromRGB(170, 170, 170)}):Play()
                 end
             end
-            TweenService:Create(tabButton, TweenTable["tab_text_colour"], {TextColor3 = _G.MeowHookUISettings.CurrentColor}):Play()
+            TweenService:Create(tabButton, TweenTable["tab_text_colour"], {TextColor3 = Color3.fromRGB(159, 115, 255)}):Play()
         end)
 
         local function UpdatePageSize()
@@ -1261,7 +1257,7 @@ function library:Init(key)
             end)
 
             button.MouseButton1Down:Connect(function()
-                TweenService:Create(buttonLabel, TweenTable["hover"], {TextColor3 = _G.MeowHookUISettings.CurrentColor}):Play()
+                TweenService:Create(buttonLabel, TweenTable["hover"], {TextColor3 = Color3.fromRGB(159, 115, 255)}):Play()
             end)
             button.MouseButton1Up:Connect(function()
                 TweenService:Create(buttonLabel, TweenTable["hover"], {TextColor3 = Color3.fromRGB(190, 190, 190)}):Play()
@@ -1367,7 +1363,7 @@ function library:Init(key)
                     end)
         
                     button.MouseButton1Down:Connect(function()
-                        TweenService:Create(buttonLabel, TweenTable["hover"], {TextColor3 = _G.MeowHookUISettings.CurrentColor}):Play()
+                        TweenService:Create(buttonLabel, TweenTable["hover"], {TextColor3 = Color3.fromRGB(159, 115, 255)}):Play()
                     end)
                     button.MouseButton1Up:Connect(function()
                         TweenService:Create(buttonLabel, TweenTable["hover"], {TextColor3 = Color3.fromRGB(190, 190, 190)}):Play()
@@ -1607,7 +1603,7 @@ function library:Init(key)
             toggleCorner.Name = "toggleCorner"
             toggleCorner.Parent = toggle
 
-            toggleGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(157, 115, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(106, 69, 181))}
+            toggleGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(34, 34, 34)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(28, 28, 28))}
             toggleGradient.Rotation = 90
             toggleGradient.Name = "toggleGradient"
             toggleGradient.Parent = toggle
@@ -2354,7 +2350,7 @@ function library:Init(key)
 
                 textBoxValues.Focused:Connect(function()
                     textBoxValues:GetPropertyChangedSignal("Text"):Connect(ResizeTextBox)
-                    TweenService:Create(textbox, TweenTable["TextBox"], {BackgroundColor3 = _G.MeowHookUISettings.CurrentColor}):Play()
+                    TweenService:Create(textbox, TweenTable["TextBox"], {BackgroundColor3 = Color3.fromRGB(159, 115, 255)}):Play()
                 end)
 
                 textBoxValues.FocusLost:Connect(function()
@@ -2583,7 +2579,7 @@ function library:Init(key)
                 end)
 
                 textBoxValues.Focused:Connect(function()
-                    TweenService:Create(textbox, TweenTable["TextBox"], {BackgroundColor3 = _G.MeowHookUISettings.CurrentColor}):Play()
+                    TweenService:Create(textbox, TweenTable["TextBox"], {BackgroundColor3 = Color3.fromRGB(159, 115, 255)}):Play()
                 end)
 
                 textBoxValues.FocusLost:Connect(function()
@@ -2812,7 +2808,7 @@ function library:Init(key)
                 end)
 
                 textBoxValues.Focused:Connect(function()
-                    TweenService:Create(textbox, TweenTable["TextBox"], {BackgroundColor3 = _G.MeowHookUISettings.CurrentColor}):Play()
+                    TweenService:Create(textbox, TweenTable["TextBox"], {BackgroundColor3 = Color3.fromRGB(159, 115, 255)}):Play()
                 end)
 
                 textBoxValues.FocusLost:Connect(function()
@@ -3051,7 +3047,7 @@ function library:Init(key)
                 optionButton.TextColor3 = Color3.fromRGB(160, 160, 160)
                 optionButton.TextSize = 14.000
                 if optionButton.Text == default then
-                    optionButton.TextColor3 = _G.MeowHookUISettings.CurrentColor
+                    optionButton.TextColor3 = Color3.fromRGB(159, 115, 255)
                     callback(selectorText.Text)
                 end
 
@@ -3061,7 +3057,7 @@ function library:Init(key)
                             TweenService:Create(x, TweenTable["selector"], {TextColor3 = Color3.fromRGB(160, 160, 160)}):Play()
                         end
                     end
-                    TweenService:Create(optionButton, TweenTable["selector"], {TextColor3 = _G.MeowHookUISettings.CurrentColor}):Play()
+                    TweenService:Create(optionButton, TweenTable["selector"], {TextColor3 = Color3.fromRGB(159, 115, 255)}):Play()
                     selectorText.Text = optionButton.Text
                     callback(optionButton.Text)
                 end)
@@ -3097,7 +3093,7 @@ function library:Init(key)
                 optionButton.TextColor3 = Color3.fromRGB(140, 140, 140)
                 optionButton.TextSize = 14.000
                 if optionButton.Text == default then
-                    optionButton.TextColor3 = _G.MeowHookUISettings.CurrentColor
+                    optionButton.TextColor3 = Color3.fromRGB(159, 115, 255)
                     callback(selectorText.Text)
                 end
 
@@ -3107,7 +3103,7 @@ function library:Init(key)
                             TweenService:Create(x, TweenTable["selector"], {TextColor3 = Color3.fromRGB(140, 140, 140)}):Play()
                         end
                     end
-                    TweenService:Create(optionButton, TweenTable["selector"], {TextColor3 = _G.MeowHookUISettings.CurrentColor}):Play()
+                    TweenService:Create(optionButton, TweenTable["selector"], {TextColor3 = Color3.fromRGB(159, 115, 255)}):Play()
                     selectorText.Text = optionButton.Text
                     callback(optionButton.Text)
                 end)
@@ -3278,7 +3274,7 @@ function library:Init(key)
             sliderIndicatorStraint.Parent = sliderIndicator
             sliderIndicatorStraint.MaxSize = Vector2.new(392, 12)
 
-            sliderIndicatorGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, _G.MeowHookUISettings.CurrentColor), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(128, 94, 208))}
+            sliderIndicatorGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(159, 115, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(128, 94, 208))}
             sliderIndicatorGradient.Rotation = 90
             sliderIndicatorGradient.Name = "sliderIndicatorGradient"
             sliderIndicatorGradient.Parent = sliderIndicator
@@ -3518,7 +3514,7 @@ function library:Init(key)
                     TweenService:Create(v, TweenTable["tab_text_colour"], {TextColor3 = Color3.fromRGB(170, 170, 170)}):Play()
                 end
             end
-            TweenService:Create(tabButton, TweenTable["tab_text_colour"], {TextColor3 = _G.MeowHookUISettings.CurrentColor}):Play()
+            TweenService:Create(tabButton, TweenTable["tab_text_colour"], {TextColor3 = Color3.fromRGB(159, 115, 255)}):Play()
 
             return Components
         end
